@@ -1,14 +1,15 @@
-# ASP.NET Core
-# Build and test ASP.NET Core projects targeting .NET Core.
-# Add steps that run tests, create a NuGet package, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+# Docker image
+# Build a Docker image to deploy, run, or push to a container registry.
+# Add steps that use Docker Compose, tag images, push to a registry, run an image, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
 pool:
   vmImage: 'Ubuntu 16.04'
 
-variables:
-  buildConfiguration: 'Release'
+task: DotNetCoreInstaller@0
+  inputs:
+    version: '2.1.300'
 
 steps:
 - script: dotnet pack
-  displayName: 'dotnet pack'
+  displayName: dotnet pack
