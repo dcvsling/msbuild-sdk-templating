@@ -1,0 +1,8 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "identity": "99085037-5828-4dbc-a7cc-c942cbe0a959",
+  "author": "Kevin Cheng",
+  "classifications": [ "sdk", "msbuild" ],
+  "name": "msbuildsdk",
+  "shortName": "sdk"
+}

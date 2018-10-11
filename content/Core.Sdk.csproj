@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>sdk-templating</PackageId>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+    <id>sdk-templating</id>
+    <version>0.1.0</version>
+    <authors>Kevin Cheng</authors>
+    <licenseUrl>MIT</licenseUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/dcvsling/msbuild-sdk-templating</PackageProjectUrl>
+    <description>sdk template for dotnet cli new</description>
+    <Summary>sdk template for dotnet cli new</Summary>
+    <PackageTags>templating sdk msbuild</PackageTags>
+  </PropertyGroup>
+
+   <ItemGroup>
+    <Content Include="content\**\*.*" />
+  </ItemGroup>
+</Project>
